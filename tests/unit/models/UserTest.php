@@ -6,6 +6,7 @@ use app\models\User;
 
 class UserTest extends \Codeception\Test\Unit
 {
+    //ชื่อควรฟังชันตั้งยาวๆยิ่งดีสือได้ดี
     public function testFindUserById()
     {
         verify($user = User::findIdentity(100))->notEmpty();
